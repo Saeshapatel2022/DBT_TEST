@@ -13,7 +13,7 @@ c.customername,
 c.segment,
 c.country,
 p.productid,
-{{markup('ordersellingprice', 'ordercostprice')}} as markup
+{{markup('o.ordersellingprice', 'o.ordercostprice')}} as markup
 from {{ ref('raw_orders') }} as o
 left join {{ ref('raw_customer') }} as c on 
 o.customerid = c.customerid
