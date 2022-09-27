@@ -13,7 +13,6 @@ c.customername,
 c.segment,
 c.country,
 p.productid,
-p.catagory,
 p.productname,
 p.subcatagory,
 {{markup('ordersellingprice', 'ordercostprice')}} as markup
