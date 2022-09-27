@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: profit_by_catagory
+    description: profit details are available in this table
+    columns: 
+      - name: orderid
+        description: primary key in the profit_by_catagory model
+      - name: shipmode
+        description: '{{doc("shipmode")}}'
