@@ -1,0 +1,21 @@
+version: 2
+
+sources: 
+  - name: globalmart
+    description: this is clone of snowflake original table clone
+    database: raw
+    schema: globalmart
+    tables:
+      - name: customer
+        description: '{{doc("customer")}}'
+      - name: orders
+        description: original order table
+        columns:
+          - name: orderid
+            description: primaryKey for orders
+      - name: product
+models:
+  - name: raw_customer
+    description: contain the customer details with address updated123
+  - name: raw_product
+    description: '{{doc("product")}}'
