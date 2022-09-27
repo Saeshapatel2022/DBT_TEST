@@ -13,7 +13,6 @@ c.customername,
 c.segment,
 c.country,
 p.productid,
-p.productname,
 p.subcatagory,
 {{markup('ordersellingprice', 'ordercostprice')}} as markup
 from {{ ref('raw_orders') }} as o
